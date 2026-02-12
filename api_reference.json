@@ -1,0 +1,20 @@
+{
+  "module": "eventBus",
+  "exports": [
+    {
+      "name": "EventBusOptions",
+      "type": "interface",
+      "description": "Configuration options for the EventBus, including maxListeners and debug settings."
+    },
+    {
+      "name": "EventHandler",
+      "type": "type",
+      "description": "Type alias for event handler functions that accept a payload of any type."
+    },
+    {
+      "name": "EventBus",
+      "type": "class",
+      "description": "The main EventBus class that provides methods for subscribing to events, publishing events, and managing listeners."
+    }
+  ]
+}
