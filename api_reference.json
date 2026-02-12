@@ -1,0 +1,20 @@
+{
+  "module": "eventBus.ts",
+  "exports": [
+    {
+      "name": "EventBus",
+      "type": "class",
+      "description": "In-memory publish/subscribe event bus. Methods: subscribe, once, unsubscribe, publish, clear, getSubscriberCount, listEvents."
+    },
+    {
+      "name": "EventHandler",
+      "type": "type",
+      "description": "Handler signature for events: (payload: T) => void."
+    },
+    {
+      "name": "EventBusOptions",
+      "type": "interface",
+      "description": "Configuration options for EventBus constructor (maxListeners, debug)."
+    }
+  ]
+}
