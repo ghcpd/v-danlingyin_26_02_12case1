@@ -1,0 +1,55 @@
+{
+  "module": "eventBus",
+  "exports": [
+    {
+      "name": "EventBus",
+      "type": "class",
+      "description": "The main event bus class that implements pub-sub pattern for event management. Provides methods to subscribe, publish, and manage event handlers."
+    },
+    {
+      "name": "EventHandler",
+      "type": "type",
+      "description": "A generic handler function type that receives a payload of any type. Signature: (payload: T) => void"
+    },
+    {
+      "name": "EventBusOptions",
+      "type": "interface",
+      "description": "Configuration interface for EventBus instantiation. Contains maxListeners (number) and debug (boolean) options."
+    },
+    {
+      "name": "subscribe",
+      "type": "function",
+      "description": "Register a handler for an event on an EventBus instance. Returns an unsubscribe function. Throws error if maxListeners limit is exceeded."
+    },
+    {
+      "name": "once",
+      "type": "function",
+      "description": "Register a one-time handler that automatically removes itself after the first event invocation."
+    },
+    {
+      "name": "unsubscribe",
+      "type": "function",
+      "description": "Remove a previously registered handler from an event. Returns true if the handler was found and removed."
+    },
+    {
+      "name": "publish",
+      "type": "function",
+      "description": "Emit an event with optional payload to all registered handlers. Returns the count of handlers invoked."
+    },
+    {
+      "name": "clear",
+      "type": "function",
+      "description": "Remove all handlers for a specific event, or clear all events if no event parameter is specified."
+    },
+    {
+      "name": "getSubscriberCount",
+      "type": "function",
+      "description": "Get the number of handlers currently registered for a specific event."
+    },
+    {
+      "name": "listEvents",
+      "type": "function",
+      "description": "Get an array of all event names that currently have at least one registered handler."
+    }
+  ]
+}
