@@ -1,0 +1,20 @@
+{
+  "module": "eventBus",
+  "exports": [
+    {
+      "name": "EventBusOptions",
+      "type": "interface",
+      "description": "Configuration options for EventBus construction. Fields: maxListeners (number) and debug (boolean)."
+    },
+    {
+      "name": "EventHandler",
+      "type": "type",
+      "description": "Generic handler function type: (payload: T) => void. Used by subscribe/once handlers."
+    },
+    {
+      "name": "EventBus",
+      "type": "class",
+      "description": "Main EventBus class providing methods: subscribe, once, unsubscribe, publish, clear, getSubscriberCount, listEvents. Construct with optional EventBusOptions."
+    }
+  ]
+}
